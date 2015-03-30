@@ -10,10 +10,11 @@
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
 
-    <title>Fixed Top Navbar Example for Bootstrap</title>
+    <title>IEApp v. 0.1 beta</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
     <link href="navbar-fixed-top.css" rel="stylesheet">
@@ -32,6 +33,7 @@
   <body>
 
     <!-- Fixed navbar -->
+    
     <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
@@ -45,11 +47,11 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Principal</a></li>
+            <li class="active"><a href="" target="interno">Principal</a></li>
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Atendimento <span class="caret"></span></a>
               <ul class="dropdown-menu" role="menu">
-                <li><a href="#" id="iniciaAtendimento">Iniciar Atendimento</a></li>
+                  <li><a href="forms/IniciaAtendimento.html" target="interno" id="iniciaAtendimento">Iniciar Atendimento</a></li>
                 <li><a href="#">Atendimentos em aberto</a></li>
                 <li><a href="#">Consultar Atendimentos</a></li>
                 <li><a href="#">Agenda</a></li>
@@ -98,30 +100,19 @@
             </li>
           </ul>
         </div><!--/.nav-collapse -->
+        <iframe class="container forms" height="1080" name="interno" src="" frameborder="0"></iframe>
       </div>
     </nav>
 
-    <div class="container">
-
-      <!-- Main component for a primary marketing message or call to action -->
-      <div class="jumbotron">
-        <h1>Navbar example</h1>
-        <p>This example is a quick exercise to illustrate how the default, static and fixed to top navbar work. It includes the responsive CSS and HTML, so it also adapts to your viewport and device.</p>
-        <p>To see the difference between static and fixed top navbars, just scroll.</p>
-        <p>
-          <a class="btn btn-lg btn-primary" href="../../components/#navbar" role="button">View navbar docs &raquo;</a>
-        </p>
-      </div>
-
-    </div> <!-- /container -->
+    
 
     <div id="myModal" class="modal hide fade" tabindex="-1" role="dialog">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal">×</button>
-          <h3>Inicia Atendimento</h3>
+          <h3>Cadastrar Cliente</h3>
       </div>
       <div class="modal-body">
-          <iframe src="" style="zoom:0.60" width="99.6%" height="250" frameborder="0"></iframe>
+        <iframe src="" style="zoom:0.60" width="99.6%" height="250" frameborder="0"></iframe>
       </div>
       <div class="modal-footer">
         <button class="btn" data-dismiss="modal">OK</button>
@@ -134,16 +125,17 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script type="text/javascript">
-      var frameSrc = "forms/IniciaAtendimento.html";
+      function getIframe(valor){
+        var frameSrc = valor;
+                
+        $('#myModal').on('show', function () {
 
-      $('#iniciaAtendimento').click(function(){
-          $('#myModal').on('show', function () {
+                $('iframe').attr("src",frameSrc);
 
-              $('iframe').attr("src",frameSrc);
-            
-        });
-          $('#myModal').modal({show:true})
-      });
+          });
+            $('#myModal').modal({show:true});
+        ;
+      }
     </script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <!--<script src="../../assets/js/ie10-viewport-bug-workaround.js"></script> -->
