@@ -68,7 +68,7 @@
             <h4 class="modal-title" id="myModalLabel">Cadastro de Cliente</h4>
           </div>
           <div class="modal-body">
-              <iframe src="CadastroCliente.html" style="zoom:0.60" width="99.6%" height="600" frameborder="0"></iframe>
+              <iframe src="CadastroCliente.html" style="zoom:0.60; " width="750" height="600" frameborder="0"></iframe>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -87,12 +87,12 @@
     <!--<script src="../../assets/js/ie10-viewport-bug-workaround.js"></script> -->
     <script language="javascript">
         function carregaData(){  
-        var today=new Date() ;
-        var todayd=today.getDate() ;
-        var todaym=today.getMonth() ;
-        var todayy=today.getFullYear();
-        var data = todayd + "/" + todaym + "/" + todayy; //sua rotina de pegar a data;  
-        document.forms[0].dataAtual.value = data;  
+            var today=new Date();
+            var todayd= today.getDate();
+            var todaym= today.getMonth();
+            var todayy= today.getFullYear();
+            var data = todayd + "/" + todaym + "/" + todayy; //sua rotina de pegar a data;  
+            document.forms[0].dataAtual.value = data;  
         }  
     </script>
   </body>
