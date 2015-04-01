@@ -15,93 +15,155 @@ and open the template in the editor.
     <body>
         <div class="container">
             <form class="form-horizontal">
-                <div class="form-group">
-                  <label class="col-sm-2 control-label">Nome:</label>
-                  <div class="col-sm-10">
-                    <input type="text" class="form-control" name="nomeCliente">
-                  </div>
-                </div>
-                <div class="form-group">
-                  <label for="emailCliente" class="col-sm-2 control-label">Email</label>
-                  <div class="col-sm-10">
-                    <input type="email" class="form-control" name="emailCliente" placeholder="Digite o e-mail">
-                  </div>
-                </div>
-                <div class="form-group">
-                  <label class="col-sm-2 control-label">Celular 1:</label>
-                  <div class="col-sm-2">
-                    <input type="text" class="form-control" name="celular1">
-                  </div>
-                  <label class="col-sm-1">Operadora:</label>
-                  <div class="col-sm-2">
-                      <select class="form-control"></select>
-                  </div>
-                </div>
-                <div class="form-group">
-                  <label class="col-sm-2 control-label">Celular 2:</label>
-                  <div class="col-sm-2">
-                    <input type="text" class="form-control" name="celular1">
-                  </div>
-                  <label class="col-sm-1">Operadora:</label>
-                  <div class="col-sm-2">
-                      <select class="form-control"></select>
-                  </div>
-                </div>
-                <div class="form-group">
-                  <label class="col-sm-2 control-label">Telefone residencial:</label>
-                  <div class="col-sm-2">
-                    <input type="text" class="form-control" name="telResidencial">
-                  </div>
-                  <label class="col-sm-2 control-label">Telefone Comercial:</label>
-                  <div class="col-sm-2">
-                    <input type="text" class="form-control" name="telResidencial">
-                  </div>
-                </div>
-                <div class="form-group">
-                  <label class="col-sm-2 control-label">CPF:</label>
-                  <div class="col-sm-2">
-                    <input type="text" class="form-control" name="telResidencial">
-                  </div>  
-                </div>
-                <div class="form-group">
-                  <label class="col-sm-2 control-label">Renda Formal:</label>
-                  <div class="col-sm-2">
-                    <input type="text" class="form-control" name="telResidencial">
-                  </div>
-                  <label class="col-sm-2 control-label">Renda Informal:</label>
-                  <div class="col-sm-2">
-                    <input type="text" class="form-control" name="telResidencial">
-                  </div>
-                  <label class="col-sm-2 control-label">FGTS:</label>
-                  <div class="col-sm-2">
-                    <input type="text" class="form-control" name="telResidencial">
-                  </div>
-                </div>
-                <div class="form-group">
-                  <label class="col-sm-2 control-label">Cód. do Imóvel procurado:</label>
-                  <div class="col-sm-2">
-                    <input type="text" class="form-control" name="cdImovelDesejado">
-                  </div>
-                  <label class="col-sm-2 control-label">Localização:</label>
-                  <div class="col-sm-2">
-                    <input type="text" class="form-control" name="localizacaoImovelDesejado" disabled>
-                  </div> 
-                </div> 
-                <div class="form-group">
-                    <label class="col-sm-2 control-label">Faixa de Preço:</label>
-                    <div class="col-sm-2">
-                        <select class="form-control"></select>  
+
+                
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h3 class="panel-title">Dados Cadastrais</h3>
                     </div>
-                    <label class="col-sm-2 control-label">Região:</label>
-                    <div class="col-sm-2">
-                        <select class="form-control"></select>  
-                    </div>
-                    <label class="col-sm-2 control-label">Tipologia:</label>
-                    <div class="col-sm-2">
-                        <select class="form-control"></select>  
+                    <div class="panel-body">
+                        <div class="form-group">
+                          <label class="col-sm-2 control-label">Nome:</label>
+                          <div class="col-sm-10">
+                            <input type="text" class="form-control" name="nomeCliente">
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <label for="emailCliente" class="col-sm-2 control-label">Email</label>
+                          <div class="col-sm-10">
+                            <input type="email" class="form-control" name="emailCliente" placeholder="Digite o e-mail">
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <label class="col-sm-2 control-label">Celular 1:</label>
+                          <div class="col-sm-2">
+                            <input type="text" class="form-control" name="celular1">
+                          </div>
+                          <label class="col-sm-1">Operadora:</label>
+                          <div class="col-sm-2">
+                              <select class="form-control"></select>
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <label class="col-sm-2 control-label">Celular 2:</label>
+                          <div class="col-sm-2">
+                            <input type="text" class="form-control" name="celular1">
+                          </div>
+                          <label class="col-sm-1">Operadora:</label>
+                          <div class="col-sm-2">
+                              <select class="form-control"></select>
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <label class="col-sm-2 control-label">Telefone residencial:</label>
+                          <div class="col-sm-2">
+                            <input type="text" class="form-control" name="telResidencial">
+                          </div>
+                          <label class="col-sm-2 control-label">Telefone Comercial:</label>
+                          <div class="col-sm-2">
+                            <input type="text" class="form-control" name="telResidencial">
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <label class="col-sm-2 control-label">CPF:</label>
+                          <div class="col-sm-2">
+                            <input type="text" class="form-control" name="telResidencial">
+                          </div>  
+                        </div>
+                        
                     </div>
                 </div>
                 
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h3 class="panel-title">Perfil comprador</h3>
+                    </div>
+                    <div class="panel-body">
+                      <div class="form-group">
+                        <label class="col-sm-2 control-label">Cód. do Imóvel procurado:</label>
+                        <div class="col-sm-2">
+                          <input type="text" class="form-control" name="cdImovelDesejado">
+                        </div>
+                        <label class="col-sm-2 control-label">Localização:</label>
+                        <div class="col-sm-2">
+                          <input type="text" class="form-control" name="localizacaoImovelDesejado" disabled>
+                        </div> 
+                      </div> 
+                      <div class="form-group">
+                          <label class="col-sm-2 control-label">Faixa de Preço:</label>
+                          <div class="col-sm-2">
+                              <select class="form-control"></select>  
+                          </div>
+                          <label class="col-sm-2 control-label">Região:</label>
+                          <div class="col-sm-2">
+                              <select class="form-control"></select>  
+                          </div>
+                          <label class="col-sm-2 control-label">Tipologia:</label>
+                          <div class="col-sm-2">
+                              <select class="form-control"></select>  
+                          </div>
+                      </div>
+                      <div class="form-group">
+                          <div class="col-sm-offset-2 col-sm-2">
+                              <div class="checkbox">
+                                <label>
+                                  <input type="checkbox"> Suítes?
+                                </label>
+                              </div>
+                          </div>
+                          <label class="col-sm-2 control-label">Qtd:</label>
+                          <div class="col-sm-2">
+                              <select class="form-control" disabled></select>  
+                          </div>
+                      </div>
+                      <div class="form-group">
+                          <div class="col-sm-offset-2 col-sm-2">
+                              <div class="checkbox">
+                                <label>
+                                  <input type="checkbox"> Garagem?
+                                </label>
+                              </div>
+                          </div>
+                      </div>    
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h3 class="panel-title">Perfil Financeiro</h3>
+                    </div>
+                    <div class="panel-body">
+                        <div class="form-group">
+                          <label class="col-sm-2 control-label">CPF:</label>
+                          <div class="col-sm-2">
+                            <input type="text" class="form-control" name="telResidencial">
+                          </div>  
+                        </div>
+                        <div class="form-group">
+                          <label class="col-sm-2 control-label">Renda Formal:</label>
+                          <div class="col-sm-2">
+                            <input type="text" class="form-control" name="telResidencial">
+                          </div>
+                          <label class="col-sm-2 control-label">Renda Informal:</label>
+                          <div class="col-sm-2">
+                            <input type="text" class="form-control" name="telResidencial">
+                          </div>
+                          <label class="col-sm-2 control-label">FGTS:</label>
+                          <div class="col-sm-2">
+                            <input type="text" class="form-control" name="telResidencial">
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <label class="col-sm-2 control-label">Valor da carta de crédito:</label>
+                          <div class="col-sm-2">
+                            <input type="text" class="form-control" name="telResidencial">
+                          </div>
+                          <label class="col-sm-2 control-label">Entrada:</label>
+                          <div class="col-sm-2">
+                            <input type="text" class="form-control" name="telResidencial">
+                          </div>
+                        </div>
+                    </div>
+                </div>
             </form>
         </div>
         
